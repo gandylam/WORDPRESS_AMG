@@ -1,0 +1,14 @@
+{
+    "name": "md-starter",
+    "require": {
+        "timber/timber": "^1.9.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "wp-coding-standards/wpcs": "2.3.0"
+    },
+    "scripts": {
+        "config-set": "vendor/bin/phpcs --config-set installed_paths wpcs",
+        "lint": "vendor/bin/phpcs --standard=WordPress"
+    }
+}

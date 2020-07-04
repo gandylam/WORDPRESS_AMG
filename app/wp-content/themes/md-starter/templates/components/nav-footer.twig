@@ -1,0 +1,13 @@
+{% if nav_footer %}
+  <nav>
+    <ul>
+      {% for item in nav_footer %}
+        <li>
+          <a href="{{item.link}}">
+            {{item.title}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

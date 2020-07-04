@@ -1,0 +1,39 @@
+# macOS stuff
+.DS_Store
+
+# Docker
+db
+
+# WordPress files
+*.po~
+*.pot~
+
+app/wp-admin/
+app/wp-content/*
+!app/wp-content/themes/
+app/wp-content/themes/*
+app/wp-includes/
+
+# Don’t ignore current theme
+!app/wp-content/themes/md-starter
+app/wp-content/themes/md-starter/vendor
+app/wp-content/themes/md-starter/js
+app/wp-content/themes/md-starter/app.css
+
+app/.htaccess
+app/*.log
+app/*.php
+app/license.txt
+app/readme.html
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc.
+.todo
+*.mk
+wpcs
+*.cache

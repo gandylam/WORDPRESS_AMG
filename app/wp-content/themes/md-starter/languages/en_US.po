@@ -1,0 +1,16 @@
+#: templates/index.twig:10
+msgid "Welcome!"
+msgstr ""
+
+#: templates/index.twig:12
+msgid ""
+"Home page featuring static lorem ipsum content and posts from the blog."
+msgstr ""
+
+#: templates/index.twig:35
+msgid "Posts"
+msgstr ""
+
+#: templates/single.twig:25
+msgid "Related posts"
+msgstr ""

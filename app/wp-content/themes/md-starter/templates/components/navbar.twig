@@ -1,0 +1,19 @@
+<nav>
+  <div>
+    <a href="{{site.url}}">
+      {{site.name}}
+    </a>
+  </div>
+
+  <ul>
+    {% if navbar %}
+      {% for item in navbar %}
+        <li>
+          <a href="{{item.link}}" class="{{is_active(item.current)}}">
+            {{item.title}}
+          </a>
+        </li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+</nav>

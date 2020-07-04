@@ -1,0 +1,54 @@
+{% extends "layouts/default.twig" %}
+
+{% block html_class "home" %}
+
+{% block content %}
+  <!-- Main -->
+  <main class="main">
+    <!-- Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1>{{__('Welcome!', 'md-starter')}}</h1>
+            <p>
+              {{__('Home page featuring static lorem ipsum content and posts from the blog.', 'md-starter')}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            {% include "dev/lorem.twig" %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h4>{{__('Posts', 'md-starter')}}</h4>
+          </div>
+        </div>
+
+        <div class="columns">
+          {% for post in posts %}
+            <div class="column">
+              <h3>
+                <a href="{{post.link}}">{{post.title}}</a>
+              </h3>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

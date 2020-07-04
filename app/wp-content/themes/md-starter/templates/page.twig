@@ -1,0 +1,23 @@
+{% extends "layouts/default.twig" %}
+
+{% block html_class "page" %}
+
+{% block content %}
+  <!-- Main -->
+  <main class="main">
+    <!-- Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="content">
+              <h1>{{post.title}}</h1>
+
+              {{post.content}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}
